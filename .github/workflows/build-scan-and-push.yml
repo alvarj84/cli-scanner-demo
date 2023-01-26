@@ -1,6 +1,6 @@
 env:
     SYSDIG_SECURE_ENDPOINT: "https://us2.app.sysdig.com"
-    REGISTRY_HOST: "alvarj84/cli-scanner-demo"
+    REGISTRY_HOST: "cli-scanner-demo"
     IMAGE_NAME: "mytestimage"
     IMAGE_TAG: "my-tag"
     DOCKERFILE_CONTEXT: "./"
