@@ -1,7 +1,7 @@
 env:
     SYSDIG_SECURE_ENDPOINT: "https://us2.app.sysdig.com"
     DOCKERHUB_USER: "alvarj84"
-    IMAGE_NAME: "q"
+    IMAGE_NAME: "cli-scanner-demo"
     IMAGE_TAG: "clean"
     DOCKERFILE_CONTEXT: "./"
   
