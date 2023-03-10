@@ -1,7 +1,7 @@
 env:
     SYSDIG_SECURE_ENDPOINT: "https://us2.app.sysdig.com"
     DOCKERHUB_USER: "alvarj84"
-    IMAGE_NAME: "cli-scanner-demo"
+    IMAGE_NAME: "q"
     IMAGE_TAG: "clean"
     DOCKERFILE_CONTEXT: "./"
   
@@ -54,7 +54,8 @@ jobs:
           docker://${{ env.DOCKERHUB_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }} \
           --console-log \
           --dbpath=${GITHUB_WORKSPACE}/cache/db/ \
-          --cachepath=${GITHUB_WORKSPACE}/cache/scanner-cache/
+          --cachepath=${GITHUB_WORKSPACE}/cache/scanner-cache/ \
+          --policy sysdig-best-practices
 
     -  name: Login to the registry
        uses: docker/login-action@v2
