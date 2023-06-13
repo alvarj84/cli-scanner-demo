@@ -40,6 +40,6 @@ DOCKERFILE_CONTEXT: "./" The path where the Dockerfile is located relative to th
 
 ## Scanning an AWS ECR:
 ```
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 306613785917.dkr.ecr.us-east-1.amazonaws.com
+aws --profile <YOUR_CONFIGURED_AWS_CREDENTIAL_PROFILE> ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 306613785917.dkr.ecr.us-east-1.amazonaws.com
 % sysdig-cli-scanner --apiurl https://us2.app.sysdig.com pull://306613785917.dkr.ecr.us-east-1.amazonaws.com/sysdigtest:clean --dbpath=./sysdig-cli-scanner/cache/db --cachepath=./sysdig-cli-scanner/cache/scanner-cache/ --policy sysdig-best-practices
 ```
