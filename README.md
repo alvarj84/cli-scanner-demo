@@ -20,13 +20,13 @@ It is required to create a few repository secrets in order to be able to push th
 
 Modify the environment variables on the build-scan-and-push.yaml file to fit your needs:
 
-SYSDIG_SECURE_ENDPOINT: "https://secure.sysdig.com" This depends on the region the account is located.
+SYSDIG_SECURE_ENDPOINT: "https://secure.sysdig.com"
 
-DOCKERHUB_USER: "alvarj84"
+DOCKERHUB_USER: "UserName"
 
 IMAGE_NAME: "cli-scanner-demo"
 
-IMAGE_TAG: "clean"
+IMAGE_TAG: "latest"
 
 DOCKERFILE_CONTEXT: "./" The path where the Dockerfile is located relative to this git repository
 
