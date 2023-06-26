@@ -1,5 +1,5 @@
 FROM alpine:latest
-#ENV SECRET_KEY "mysecretkey"
+ENV SECRET_KEY "mysecretkey"
 #ENV DATABASE_PASSWORD "password123"
 #LABEL AWS_TOKEN="thisisanawstoken"
 #ARG HTTP_PROXY="http://user:pass@proxy.lon.example.com"
